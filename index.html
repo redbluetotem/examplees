@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google</title>
+     <link rel="icon" type="image/x-icon" href="https://www.google.com/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Website</title>
+    <style>
+        /* General Body Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, red, blue);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Centered Content */
+        .content {
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            animation: fadeIn 3s ease-out;
+        }
+
+        /* Button Styles */
+        .download-btn {
+            padding: 15px 40px;
+            font-size: 1.5rem;
+            background-color: #ff5050;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        /* Button Hover Animation */
+        .download-btn:hover {
+            background-color: #00b3b3;
+            transform: scale(1.1);
+        }
+
+        /* Gradient Animation */
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Fade-In Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>examplee downloads</h1>
+        <p>if you press the button then you will go to our download libary!</p>
+        <a href="apps.html" class="download-btn">Go now!</a>
+
+    </div>
+
+</body>
+</html>
